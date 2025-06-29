@@ -47,6 +47,7 @@ class DogDetailsFragment : Fragment() {
             dog?.let {
                 binding.dogDetailName.text = it.name
                 binding.dogDetailBreed.text = it.breed
+                binding.dogDetailGender?.text = getString(R.string.gender_format, translateGender(it.gender))
                 binding.dogDetailAge.text = getString(R.string.years_old_format, it.age)
                 Glide.with(this).load(it.imageUri.toUri()).into(binding.dogDetailImage)
                 binding.toggleFavorite.isChecked = it.isFavorite
@@ -67,6 +68,14 @@ class DogDetailsFragment : Fragment() {
         }
     }
 
+    private fun translateGender(gender: String): String {
+        return when (gender.lowercase()) {
+            "male" -> getString(R.string.male)
+            "female" -> getString(R.string.female)
+            else -> gender
+        }
+    }
+
     private fun setupMenu() {
         val menuHost: MenuHost = requireActivity()
         menuHost.addMenuProvider(object : MenuProvider {
@@ -74,6 +83,7 @@ class DogDetailsFragment : Fragment() {
                 menuInflater.inflate(R.menu.main_menu, menu)
                 menu.findItem(R.id.action_delete)?.isVisible = false
                 menu.findItem(R.id.action_return)?.isVisible = true
+                menu.findItem(R.id.action_refresh)?.isVisible = false
             }
 
             override fun onMenuItemSelected(item: MenuItem): Boolean {
@@ -87,5 +97,4 @@ class DogDetailsFragment : Fragment() {
             }
         }, viewLifecycleOwner, Lifecycle.State.RESUMED)
     }
-
 }

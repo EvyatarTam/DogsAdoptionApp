@@ -10,7 +10,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/no_dogs_available"
-        android:textColor="@color/gray"
+        android:textColor="@color/dark_gray"
         android:gravity="center"
         android:textSize="16sp"
         android:visibility="gone"
@@ -39,4 +39,16 @@
         android:backgroundTint="@color/turquoise"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnRandomFact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/random_fact"
+        app:srcCompat="@drawable/baseline_question_mark_24"
+        android:backgroundTint="@color/turquoise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
