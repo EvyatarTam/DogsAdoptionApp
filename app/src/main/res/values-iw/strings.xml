@@ -9,8 +9,12 @@
     <string name="favorite_on">♥ מועדפים</string>
     <string name="favorite_off">♡ מועדפים</string>
     <string name="dog_name">שם הכלב</string>
-    <string name="dog_age">גיל הכלב</string>
+    <string name="dog_age">גיל הכלב (0-20)</string>
     <string name="dog_breed">גזע</string>
+    <string name="male">זכר</string>
+    <string name="female">נקבה</string>
+    <string name="gender_format">מין: %1$s</string>
+    <string name="dog_gender">מין הכלב</string>
     <string name="select_image">בחר תמונה</string>
     <string name="save_dog">שמור כלב</string>
     <string name="fill_all_fields">נא למלא את כל השדות.</string>
@@ -24,9 +28,9 @@
     <string name="tab_history">היסטוריה</string>
     <string name="history_title">היסטוריית אימוצים</string>
     <string name="adopter">מאמץ</string>
-    <string name="adopter_format">מאמץ: %1$s %2$s</string>
+    <string name="adopter_format">מאמץ: %1$s</string>
     <string name="start_adoption_process">התחל תהליך אימוץ</string>
-    <string name="Adopting">מאמצים:</string>
+    <string name="Adopting">מאמצים את:</string>
     <string name="first_name">שם פרטי</string>
     <string name="last_name">שם משפחה</string>
     <string name="email">מייל</string>
@@ -82,12 +86,89 @@
     <string name="category_food">אוכל</string>
     <string name="category_toys">צעצועים</string>
     <string name="category_equipment">ציוד</string>
-    <string name="hint_description">תיאור (לא חובה)</string>
+    <string name="hint_description">תיאור</string>
     <string name="save">שמור</string>
     <string name="category_format">קטגוריה: %1$s</string>
     <string name="menu_donations">תרומות</string>
     <string name="menu_about">אודות</string>
     <string name="all_categories">הכל</string>
     <string name="about_text">האפליקציה נבנתה עבור עמותת אימוץ כלבים. ניתן לראות כלבים, לאמץ, לתרום ציוד ולעזור בדיווח על כלבים משוטטים. נבנה באהבה ע״י סטודנטים מ־HIT 🐾</string>
+    <string name="Tel_Aviv">תל אביב</string>
+    <string name="Donor_Name">שם תורם</string>
+    <string name="Donor_Category">קטגוריה</string>
+    <string name="Donor_Description">תיאור</string>
+    <string name="donation_title">תמכו בכלבים שלנו 🐾</string>
+    <string name="stray_reports_title">ראיתם כלב אבוד? ספרו לנו! 🐶</string>
+    <string name="team_members">חברי הקבוצה</string>
+    <string name="member1_name">שירה אייל</string>
+    <string name="member2_name">רזיאל אוטיק</string>
+    <string name="member3_name">אביתר תם</string>
+    <string name="no_donations">אין תרומות למחיקה</string>
+    <string name="menu_strays">רשימת דיווחים</string>
+    <string name="no_stray_reports">אין דיווחים למחיקה</string>
+    <string name="random_fact">עובדה אקראית</string>
+    <string name="ok">אוקיי</string>
+    <string name="api_error_message">שגיאה בקריאה לשרת</string>
+    <string-array name="local_dog_facts">
+        <item>לכלבים יש שלושה עפעפיים.</item>
+        <item>גרייהאונד יכול לנצח צ׳יטה במרוץ ארוך.</item>
+        <item>דלמטיים נולדים לבנים לגמרי.</item>
+        <item>כלבים יכולים ללמוד יותר מ־1000 מילים.</item>
+        <item>חוש הריח של כלב חזק פי 40 משלנו.</item>
+    </string-array>
+
+
+    <string-array name="random_dog_names">
+        <item>מקס</item>
+        <item>בלה</item>
+        <item>צרלי</item>
+        <item>לונה</item>
+        <item>קופר</item>
+        <item>דייזי</item>
+        <item>רוקי</item>
+        <item>סיידי</item>
+        <item>דיווק</item>
+        <item>מולי</item>
+        <item>בדי</item>
+        <item>ביילי</item>
+        <item>רובי</item>
+        <item>מיילו</item>
+        <item>זואי</item>
+        <item>ביר</item>
+        <item>קלואי</item>
+        <item>טאקר</item>
+        <item>סטלה</item>
+        <item>ליאו</item>
+        <item>רוזי</item>
+        <item>פין</item>
+        <item>לילי</item>
+        <item>סקאוט</item>
+        <item>אוליב</item>
+        <item>גספר</item>
+        <item>וילואו</item>
+        <item>זאוס</item>
+        <item>פני</item>
+        <item>מרפי</item>
+        <item>נלה</item>
+        <item>ווינסטון</item>
+        <item>מייפל</item>
+        <item>אודין</item>
+        <item>גינגר</item>
+        <item>תור</item>
+        <item>אבי</item>
+        <item>הנק</item>
+        <item>רוקסי</item>
+        <item>מוס</item>
+        <item>פפר</item>
+        <item>שדו</item>
+        <item>הייזל</item>
+        <item>דיזל</item>
+        <item>רמי</item>
+        <item>יונו</item>
+        <item>מרלי</item>
+        <item>קליאו</item>
+        <item>אס</item>
+        <item>פופי</item>
+    </string-array>
 
 </resources>

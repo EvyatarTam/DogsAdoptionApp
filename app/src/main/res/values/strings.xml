@@ -11,8 +11,12 @@
     <string name="favorite_on">♥ Favorite</string>
     <string name="favorite_off">♡ Favorite</string>
     <string name="dog_name">Dog Name</string>
-    <string name="dog_age">Dog Age</string>
+    <string name="dog_age">Dog Age (0-20)</string>
     <string name="dog_breed">Breed</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender_format">Gender: %1$s</string>
+    <string name="dog_gender">Dog Gender</string>
     <string name="select_image">Select Image</string>
     <string name="save_dog">Save Dog</string>
     <string name="fill_all_fields">Please fill all fields.</string>
@@ -26,7 +30,7 @@
     <string name="tab_history">History</string>
     <string name="history_title">Adoption History</string>
     <string name="adopter">Adopter</string>
-    <string name="adopter_format">Adopter: %1$s %2$s</string>
+    <string name="adopter_format">Adopter: %1$s</string>
     <string name="start_adoption_process">Start adoption process</string>
     <string name="Adopting">Adopting:</string>
     <string name="first_name">First Name</string>
@@ -81,7 +85,7 @@
     <string name="category_food">Food</string>
     <string name="category_toys">Toys</string>
     <string name="category_equipment">Equipment</string>
-    <string name="hint_description">Description (optional)</string>
+    <string name="hint_description">Description</string>
     <string name="save">Save</string>
     <string name="category_format">Category: %1$s</string>
     <string name="menu_donations">Donations</string>
@@ -89,4 +93,87 @@
     <string name="all_categories">All</string>
     <string name="about_text">This app was created for a dog adoption shelter. You can view dogs, adopt, donate items, and help report stray dogs. Built with love by HIT students 🐾</string>
 
+    <string name="team_members">Team Members</string>
+    <string name="member1_name">Shira Ayal</string>
+    <string name="member2_name">Raziel Otick</string>
+    <string name="member3_name">Evyatar Tam</string>
+    
+    <string name="reportDateTime" translatable="false">19/06/2025 14:00"</string>
+    <string name="Tel_Aviv">Tel Aviv</string>
+    <string name="Donor_Name">Donor Name</string>
+    <string name="Donor_Category">Category</string>
+    <string name="Donor_Description">Description</string>
+    <string name="Donor_Date" translatable="false">2025-06-19</string>
+    <string name="no_donations">No donations in the list - Nothing to delete.</string>
+
+    <string name="menu_strays">Stray Reports</string>
+    <string name="no_stray_reports">No stray dogs in the list - Nothing to delete.</string>
+
+    <string name="random_fact">Random Fact</string>
+    <string name="ok">OK</string>
+    <string name="api_error_message">API error</string>
+
+    <string-array name="local_dog_facts">
+        <item>Dogs have three eyelids.</item>
+        <item>A Greyhound can beat a Cheetah in a long-distance race.</item>
+        <item>Dalmatians are born completely white.</item>
+        <item>Dogs can learn more than 1000 words.</item>
+        <item>A dog’s sense of smell is at least 40x better than ours.</item>
+    </string-array>
+
+    <string name="donation_title">Support Our Dogs 🐾</string>
+    <string name="stray_reports_title">See a Lost Dog? Let Us Know! 🐶</string>
+
+    <string-array name="random_dog_names">
+        <item>Max</item>
+        <item>Bella</item>
+        <item>Charlie</item>
+        <item>Luna</item>
+        <item>Cooper</item>
+        <item>Daisy</item>
+        <item>Rocky</item>
+        <item>Sadie</item>
+        <item>Duke</item>
+        <item>Molly</item>
+        <item>Buddy</item>
+        <item>Bailey</item>
+        <item>Ruby</item>
+        <item>Milo</item>
+        <item>Zoe</item>
+        <item>Bear</item>
+        <item>Chloe</item>
+        <item>Tucker</item>
+        <item>Stella</item>
+        <item>Leo</item>
+        <item>Rosie</item>
+        <item>Finn</item>
+        <item>Lily</item>
+        <item>Scout</item>
+        <item>Olive</item>
+        <item>Jasper</item>
+        <item>Willow</item>
+        <item>Zeus</item>
+        <item>Penny</item>
+        <item>Murphy</item>
+        <item>Nala</item>
+        <item>Winston</item>
+        <item>Maple</item>
+        <item>Odin</item>
+        <item>Ginger</item>
+        <item>Thor</item>
+        <item>Abby</item>
+        <item>Hank</item>
+        <item>Roxy</item>
+        <item>Moose</item>
+        <item>Pepper</item>
+        <item>Shadow</item>
+        <item>Hazel</item>
+        <item>Diesel</item>
+        <item>Remi</item>
+        <item>Juno</item>
+        <item>Marley</item>
+        <item>Cleo</item>
+        <item>Ace</item>
+        <item>Poppy</item>
+    </string-array>
 </resources>

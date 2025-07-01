@@ -26,6 +26,7 @@ import dagger.hilt.android.AndroidEntryPoint
 class DonationFragment : Fragment() {
 
     private var binding: FragmentDonationBinding by autoCleared()
+
     private val viewModel: DonationViewModel by viewModels()
     private lateinit var adapter: DonationAdapter
 
@@ -61,7 +62,9 @@ class DonationFragment : Fragment() {
     private fun setupSpinner() {
         val categories = listOf(
             getString(R.string.all_categories),
-            "FOOD", "TOYS", "EQUIPMENT"
+            getString(R.string.category_food),
+            getString(R.string.category_toys),
+            getString(R.string.category_equipment)
         )
 
         val spinnerAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, categories)
@@ -72,9 +75,9 @@ class DonationFragment : Fragment() {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                 val selected = categories[position]
                 val category = when (selected) {
-                    "FOOD" -> DonationCategory.FOOD
-                    "TOYS" -> DonationCategory.TOYS
-                    "EQUIPMENT" -> DonationCategory.EQUIPMENT
+                    getString(R.string.category_food) -> DonationCategory.FOOD
+                    getString(R.string.category_toys) -> DonationCategory.TOYS
+                    getString(R.string.category_equipment) -> DonationCategory.EQUIPMENT
                     else -> null
                 }
                 viewModel.setCategory(category)
@@ -94,7 +97,23 @@ class DonationFragment : Fragment() {
             override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
                 return when (menuItem.itemId) {
                     R.id.action_delete_all -> {
-                        viewModel.deleteAll()
+                        val donationCount = viewModel.donations.value?.size ?: 0
+                        if (donationCount == 0) {
+                            androidx.appcompat.app.AlertDialog.Builder(requireContext())
+                                .setTitle(R.string.alert)
+                                .setMessage(R.string.no_donations)
+                                .setPositiveButton(android.R.string.ok, null)
+                                .show()
+                        } else {
+                            androidx.appcompat.app.AlertDialog.Builder(requireContext())
+                                .setTitle(R.string.confirm_delete)
+                                .setMessage(R.string.sure_delete_all)
+                                .setPositiveButton(R.string.yes) { _, _ ->
+                                    viewModel.deleteAll()
+                                }
+                                .setNegativeButton(android.R.string.cancel, null)
+                                .show()
+                        }
                         true
                     }
                     else -> false
@@ -102,5 +121,6 @@ class DonationFragment : Fragment() {
             }
         }, viewLifecycleOwner, Lifecycle.State.RESUMED)
     }
+
 
 }
